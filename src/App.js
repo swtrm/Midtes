@@ -2,188 +2,226 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div id="mainbg">
-      <img
-        className="coverimage"
-        src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/model/aventador/aventador-sv/slider/aventador-sv.jpg"
-        alt="Cover Image"
-        width="100%"
-        height="336px"
-      />
-      <div id="Namephoto">
-        <div>
-          <h1> Showroom SSCR </h1>
-        </div>
-        <div>
-          <img
-            src="https://cdn.leonardo.ai/users/c431464d-36c5-4329-847a-e4e80727329a/generations/28f7dd18-410a-4101-98c9-24abeef008d3/variations/Default_Ash_Ketchum_is_a_determined_and_adventurous_young_Pokm_0_28f7dd18-410a-4101-98c9-24abeef008d3_1.jpg"
-            alt="Display Picture"
-            width="300px"
-            height="300px"
-          />
+   <div>
+  <header>
+    <button className="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="images/share.svg" alt="share" className="btn-img" />
+      SHARE</button>
+    <nav className="collapsible-nav" id="collapsible-nav">
+      <a href="index.html" className="nav-link active">HOME</a>
+      <a href="resume.html" className="nav-link">RESUME</a>
+      <a href="portfolio.html" className="nav-link">PORTFOLIO</a>
+      <a href="blog.html" className="nav-link">BLOG</a>
+      <a href="contact.html" className="nav-link">CONTACT</a>
+    </nav>
+    <button className="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav" data-target="collapsible-nav"><img src="images/hamburger.svg" alt="hamburger" /></button>
+  </header>
+  <div className="content-wrapper">
+    <aside>
+      <div className="profile-img-wrapper">
+        <img src="images/profile.jpg" alt="profile" />
+      </div>
+      <h1 className="profile-name">Swarsh Mait</h1>
+      <div className="text-center">
+        <span className="badge badge-white badge-pill profile-designation">UI / UX Designer</span>
+      </div>
+      <nav className="social-links">
+        <a href="#!" className="social-link"><i className="fab fa-facebook-f" /></a>
+        <a href="#!" className="social-link"><i className="fab fa-twitter" /></a>
+        <a href="#!" className="social-link"><i className="fab fa-behance" /></a>
+        <a href="#!" className="social-link"><i className="fab fa-dribbble" /></a>
+        <a href="#!" className="social-link"><i className="fab fa-github" /></a>
+      </nav>
+      <div className="widget">
+        <h5 className="widget-title">personal information</h5>
+        <div className="widget-content">
+          <p>BIRTHDAY : 17 November 2004</p>
+          <p>PHONE : 082192001039</p>
+          <p>MAIL : swarshmait@gmail.com</p>
+          <p>Location : Tomohon sulawesi utara</p>
+          <button className="btn btn-download-cv btn-primary rounded-pill"> <img src="images/download.svg" alt="download" className="btn-img" />DOWNLOAD CV </button>
         </div>
       </div>
-      <div id="pokemontrainer">
-        <div>
-          <p>
-          The car showroom is a sleek, modern space designed to showcase a variety of vehicles in a polished and professional environment. The large, glass-fronted facade allows natural light to flood the interior, highlighting the gleaming finishes of the cars on display. Inside, the showroom floor is spacious and meticulously clean, with a glossy tile or polished concrete surface that reflects the vehicles.
-          </p>
+      <div className="widget card">
+        <div className="card-body">
+          <div className="widget-content">
+            <h5 className="widget-title card-title">LANGUAGES</h5>
+            <p>English : native</p>
+            <p>Spanish : fluent</p>
+            <p>Italian : fluent</p>
+          </div>
         </div>
       </div>
-      <div id="Expcontainer">
-        <div>
-          <h2>Fortuner</h2>
-          <h3>500 Juta</h3>
-          <p>
-          The Toyota Fortuner is a rugged and versatile SUV renowned for its powerful performance, robust build, and premium design. Designed to excel both on city roads and off-road adventures, the Fortuner combines luxury with utility, making it a popular choice among families, adventurers, and professionals alike.
-          </p>
-        </div>
-        <div>
-          <img className="image"
-            src="https://wallpaperaccess.com/full/1776035.jpg"
-            alt="Freepngimgcom"
-          />
-        </div>
-        <div>
-          <img className="image"
-            src="https://carnetwork.s3.ap-southeast-1.amazonaws.com/file/b1ccfc35280a4098b3977412c57e7e75.jpg"
-            alt="Freepngimgcom"
-          />
-        </div>
-        <div>
-          <h2>Innova</h2>
-          <h3>400 Juta</h3>
-          <p>
-            Successfully earned eight Gym Badges in
-            <br />
-            various regions, showcasing strategic thinking
-            <br />
-            and adaptability in battles against Gym
-            <br />
-            Leaders.
-          </p>
-        </div>
-        <div>
-          <h2>Civic Turbo Editon</h2>
-          <h3>1.4 Miliar</h3>
-          <p>
-            Consistently participated in regional Pokémon
-            <br />
-            League tournaments, reaching the finals in <br />
-            several instances and demonstrating a strong <br />
-            competitive spirit.
-          </p>
-        </div>
-        <div>
-          <img className="image"
-            src="https://i.ytimg.com/vi/pSMt0cZYHUA/maxresdefault.jpg"
-            alt="Freepngimgcom"
-          />
-        </div>
-        <div>
-          <img className="image"
-            src="https://img.remediosdigitales.com/c2adeb/toyota-avanza-2022_/1366_2000.jpg"
-            alt="Freepngimgcom"
-          />
-        </div>
-        <div>
-          <h2>Avanza</h2>
-          <h3>300 Juta</h3>
-          <p>
-            Known for forming deep connections with his
-            <br />
-            Pokémon partners, fostering strong friendships,
-            <br />
-            and valuing teamwork during battles.
-          </p>
-        </div>
-        <div>
-        <h2>Honda City</h2>
-        <h3>350 Juta</h3>
-          <p>
-            Conquered the Battle Frontier facilities in the <br />
-            Hoenn region, showcasing versatility in <br />
-            different battle formats.
-          </p>
-        </div>
-        <div>
-          <img className="image"
-            src="https://cdn.autopapo.com.br/box/uploads/2020/11/24142104/honda-city-hatchback-2021-vermelho-dianteira-detalhe.jpg"
-            alt="Freepngimgcom"
-          />
-        </div>
-        <div>
-          <img className="image"
-            src="https://tconline.com.br/wp-content/uploads/2020/07/6.2-scaled.jpg"
-            alt="Freepngimgcom"
-          />
-        </div>
-        <div>
-          <h2>Honda Civic</h2>
-          <h3>800 Juta</h3>
-          <p>
-            Played a crucial role in rescuing and caring <br />
-            for Pokémon in various instances, displaying a <br />
-            strong sense of responsibility and compassion.
-          </p>
-        </div>
-        <div>
-          <h2>Pajero</h2>
-          <h3>500 Juta</h3>
-          <p>
-            Exploring new regions and discovering rare <br />
-            and legendary Pokémon species.
-          </p>
-        </div>
-        <div>
-          <img className="image"
-            src="https://www.autoo.com.br/fotos/2023/10/1280_960/mitsubishi_pajero-sport_2024_1_30102023_76422_1280_960.jpg"
-            alt="Freepngimgcom"
-          />
-        </div>
-        <div>
-          <img className="image"
-            src="https://imgcdn.oto.com/large/gallery/color/28/1635/mitsubishi-xpander-color-793751.jpg"
-            alt="Freepngimgcom"
-          />
-        </div>
-        <div>
-          <h2>Xpander</h2>
-          <h3>300 Juta</h3>
-          <p>
-            Inspiring and mentoring aspiring Pokémon
-            <br />
-            Trainers to reach their full potential.
-          </p>
-          <br />
-          <br />
-          <h3>Pokémon Researcher</h3>
-          <p>
-            Building a deeper understanding of Pokémon <br />
-            habitats and fostering conservation efforts.
-          </p>
+      <div className="widget card">
+        <div className="card-body">
+          <div className="widget-content">
+            <h5 className="widget-title card-title">INTERESTS</h5>
+            <p>Video games</p>
+            <p>Finance</p>
+            <p>Basketball</p>
+            <p>Theatre</p>
+          </div>
         </div>
       </div>
-      <div id="education">
-        <div className="edu">
-          <h2>Education</h2>
-          <p>An educational car showroom is an innovative and interactive space designed to educate visitors about the automotive industry, technology, and sustainability. It combines the excitement of exploring vehicles with hands-on learning opportunities, making it ideal for students, enthusiasts, and curious minds of all ages.</p>
-          <h3>Visitor Experience</h3>
-          <p>The showroom provides a welcoming environment with knowledgeable staff guiding visitors. Informational brochures, interactive guides, and child-friendly activities ensure the experience is accessible and engaging for everyone.</p>
+    </aside>
+    <main>
+      <section className="intro-section">
+        <h2 className="section-title">Hello, Daisy Murphy!</h2>
+        <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print
+          media. I enjoy turning complex problems into simple, beautiful and intuitive designs. My job is to
+          build your website so that it is functional and user-friendly but at the same time attractive.
+          Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use.
+          My aim is to bring across your message and identity in the most creative way. I created web design
+          for many famous brand companies.</p>
+        <a href="#!" className="btn btn-primary btn-hire-me">HIRE ME</a>
+      </section>
+      <section className="resume-section">
+        <div className="row">
+          <div className="col-lg-6">
+            <h6 className="section-subtitle">RESUME</h6>
+            <h2 className="section-title">EDUCATION</h2>
+            <ul className="time-line">
+              <li className="time-line-item">
+                <span className="badge badge-primary">1998 - 2005</span>
+                <h6 className="time-line-item-title">Master In Computer Science</h6>
+                <p className="time-line-item-subtitle">MASTER, UNIVERSITY</p>
+                <p className="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla
+                  vitae, interdum sed tortor.</p>
+              </li>
+              <li className="time-line-item">
+                <span className="badge badge-primary">1995 - 1998</span>
+                <h6 className="time-line-item-title">Studied at Harvard University</h6>
+                <p className="time-line-item-subtitle">UNIVERSITY</p>
+                <p className="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla
+                  vitae, interdum sed tortor.
+                </p>
+              </li>
+              <li className="time-line-item">
+                <span className="badge badge-primary">1993 - 1995</span>
+                <h6 className="time-line-item-title">Studied at Oxford University</h6>
+                <p className="time-line-item-subtitle">UNIVERSITY</p>
+                <p className="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla
+                  vitae, interdum sed tortor.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-6">
+            <h6 className="section-subtitle">RESUME</h6>
+            <h2 className="section-title">Experience</h2>
+            <ul className="time-line">
+              <li className="time-line-item">
+                <span className="badge badge-primary">2010 - 2014</span>
+                <h6 className="time-line-item-title">UI/UX Designer</h6>
+                <p className="time-line-item-subtitle">Web Agency</p>
+                <p className="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla
+                  vitae, interdum sed
+                  tortor.</p>
+              </li>
+              <li className="time-line-item">
+                <span className="badge badge-primary">2008 - 2010</span>
+                <h6 className="time-line-item-title">Web Designer</h6>
+                <p className="time-line-item-subtitle">Apple Inc.</p>
+                <p className="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla
+                  vitae, interdum sed
+                  tortor.
+                </p>
+              </li>
+              <li className="time-line-item">
+                <span className="badge badge-primary">2006 - 2008</span>
+                <h6 className="time-line-item-title">Graphic Designer</h6>
+                <p className="time-line-item-subtitle">Apple Inc.</p>
+                <p className="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla
+                  vitae, interdum sed
+                  tortor.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="skills">
-          <h2>rating</h2>
-          <p>Experience ⭐⭐⭐⭐⭐</p>
-          <p>Quality ⭐⭐⭐⭐⭐</p>
-          <p>confortnes ⭐⭐⭐⭐⭐</p>
-          <h2>Contact</h2>
-          <p>(123) 456-7890</p>
-          <p>Pallet Town, Kanto Region</p>
-          <p>ash.ketchum@emailcom</p>
-          <p>www.ashketchum.com</p>
+      </section>
+      <section className="services-section">
+        <h6 className="section-subtitle">WHAT I DO</h6>
+        <h2 className="section-title">SERVICES</h2>
+        <div className="row">
+          <div className="media service-card col-lg-6">
+            <div className="service-icon">
+              <img src="assets/images/001-target.svg" alt="target" />
+            </div>
+            <div className="media-body">
+              <h5 className="service-title">web designing</h5>
+              <p className="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
+                tortor.</p>
+            </div>
+          </div>
+          <div className="media service-card col-lg-6">
+            <div className="service-icon">
+              <img src="assets/images/003-idea.svg" alt="bulb" />
+            </div>
+            <div className="media-body">
+              <h5 className="service-title">Graphic design</h5>
+              <p className="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
+                tortor.
+              </p>
+            </div>
+          </div>
+          <div className="media service-card col-lg-6">
+            <div className="service-icon">
+              <img src="assets/images/002-development.svg" alt="development" />
+            </div>
+            <div className="media-body">
+              <h5 className="service-title">Development</h5>
+              <p className="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
+                tortor.
+              </p>
+            </div>
+          </div>
+          <div className="media service-card col-lg-6">
+            <div className="service-icon">
+              <img src="assets/images/004-smartphone.svg" alt="smartphone" />
+            </div>
+            <div className="media-body">
+              <h5 className="service-title">Mobile design</h5>
+              <p className="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
+                tortor.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <section className="testimonial-section">
+        <div id="testimonialCarousel" className="testimonial-carousel carousel slide" data-ride="carousel">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <p className="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                interdum sed tortor.</p>
+              <img src="assets/images/Profile.png" alt="profile" className="testimonial-img" />
+              <p className="testimonial-name">Nout Golstein</p>
+            </div>
+            <div className="carousel-item">
+              <p className="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                interdum sed tortor.</p>
+              <img src="assets/images/Profile.png" alt="profile" className="testimonial-img" />
+              <p className="testimonial-name">Nout Golstein</p>
+            </div>
+            <div className="carousel-item">
+              <p className="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                interdum sed tortor.</p>
+              <img src="assets/images/Profile.png" alt="profile" className="testimonial-img" />
+              <p className="testimonial-name">Nout Golstein</p>
+            </div>
+          </div>
+          <ol className="carousel-indicators">
+            <li data-target="#testimonialCarousel" data-slide-to={0} className="active" />
+            <li data-target="#testimonialCarousel" data-slide-to={1} />
+            <li data-target="#testimonialCarousel" data-slide-to={2} />
+          </ol>
+        </div>
+      </section>
+      <footer>Live Resume @ <a href="https://www.bootstrapdash.com" target="_blank" rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
+    </main>
+  </div>
+</div>
+
   );
 };
 
