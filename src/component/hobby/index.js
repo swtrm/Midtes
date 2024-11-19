@@ -1,5 +1,7 @@
-const hobby = () =>{
+import { Slide } from "react-awesome-reveal";
+const Hobby = () =>{
     return(
+        <Slide delay={900}>
         <div className="row">
           <div className="media service-card col-lg-6">
             <div className="service-icon">
@@ -41,6 +43,7 @@ const hobby = () =>{
             </div>
           </div>
         </div>
+        </Slide>
     );
 };
-export default hobby ;
+export default Hobby ;

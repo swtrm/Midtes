@@ -1,19 +1,30 @@
-const profil = () =>{
+import { Fade } from "react-awesome-reveal";
+import React, { useState, useEffect } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
+const Profile= () =>{
+  const [profile, setProfile] = useState({});
+  // const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const db = getDatabase();
+    // setLoading(true);
+    const profileRef = ref(db, "profile");
+    onValue(profileRef, (snapshot) => {
+      const data = snapshot.val();
+      setProfile(data);
+      // setLoading(false);
+    });
+  }, []);
     return(
+      <Fade>
         <div className="profile-img-wrapper">
-        <img src="images/profile.jpg" alt="profile" />
-          <h1 className="profile-name">Swarsh Mait</h1>
+        <img src={`data:image/jpg;base64, ${profile.img}`} alt="profile" />
+          <h1 className="profile-name">{profile.name}</h1>
           <div className="text-center">
-          <span className="badge badge-white badge-pill profile-designation">UI / UX Designer</span>
+          <span className="badge badge-white badge-pill profile-designation">{profile.Status}</span>
           </div>
-          <nav className="social-links">
-          <a href="#!" className="social-link"><i className="fab fa-facebook-f" /></a>
-          <a href="#!" className="social-link"><i className="fab fa-twitter" /></a>
-          <a href="#!" className="social-link"><i className="fab fa-behance" /></a>
-          <a href="#!" className="social-link"><i className="fab fa-dribbble" /></a>
-          <a href="#!" className="social-link"><i className="fab fa-github" /></a>
-          </nav>
       </div>
+    </Fade>
     );
 };
-export default profil;
+export default Profile;
