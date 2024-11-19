@@ -2,7 +2,7 @@ import "./App.css";
 import Information from "./component/information";
 import Education from "./component/education";
 import Hobby from "./component/hobby";
-import Profile from "./component/Profile";
+import Profile from "./component/profile";
 import { Fade } from "react-awesome-reveal";
 import Info from "./component/Info";
 const App = () => {
